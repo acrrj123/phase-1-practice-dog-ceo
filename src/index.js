@@ -11,9 +11,9 @@ fetch(imgUrl)
 
 function renderImages(arrayImages) {
   const imgContainer = document.getElementById("dog-image-container");
-  arrayImages.forEach(imgUrl => {
+  arrayImages.forEach(url => {
     const img = document.createElement('img');
-    img.src = imgUrl;
+    img.src = url;
     imgContainer.appendChild(img);
   });
 }
@@ -42,7 +42,7 @@ function renderBreeds(breeds) {
     const li = document.createElement('li');
     li.textContent = breed;
     ul.appendChild(li);
-    li.addEventListener('click', e => li.style.color = 'red');
+    li.addEventListener('click', () => li.style.color = 'red');
   });
 }
 
