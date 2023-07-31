@@ -56,7 +56,7 @@ function filterBreeds(e) {
   //console.log(e.target)
   let letter = e.target.value;
   let filteredBreeds = breeds.filter(breed => breed[0] === letter);
-  console.log(filteredBreeds)
+  //console.log(filteredBreeds)
   ul.innerHTML = '';
   renderBreeds(filteredBreeds);
 }
