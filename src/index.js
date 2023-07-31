@@ -1,13 +1,13 @@
-console.log('%c HI', 'color: firebrick');
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 
-// on page load, fetches the images using the url above ⬆️
+// on page load, fetches the images using the url above 
 // parses the response as JSON
-// adds image elements to the DOM for each 🤔 image in the array
+// adds image elements to the DOM for each image in the array
 
 fetch(imgUrl)
 .then(resp => resp.json())
-.then(data => renderImages(data.message));
+.then(data => renderImages(data.message)) ;
+
 
 function renderImages(arrayImages) {
   const imgContainer = document.getElementById("dog-image-container");
@@ -23,7 +23,7 @@ const breedUrl = "https://dog.ceo/api/breeds/list/all";
 // After the first challenge is completed, add JavaScript that:
 // on page load, fetches all the dog breeds using the url above ⬆️
 // adds the breeds to the page in the <ul> provided in index.html.
-//Once all of the breeds are rendered in the <ul>, add JavaScript so that, when the user clicks on any one of the <li>s, the font color of that <li> changes. This can be a color of your choosing.
+//Once all of the breeds are rendered in the <ul>, add JavaScript so that, when the user clicks on any one of the <li>s, the font color of that <li> changes. This can be a color of your choice.
 
 let breeds
 
